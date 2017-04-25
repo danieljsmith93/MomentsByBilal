@@ -1,0 +1,128 @@
+<html lang="en" >
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>VBB Studios</title>
+
+  <!-- Angular Material style sheet -->
+  <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
+<link href="https://fonts.googleapis.com/css?family=Cinzel|Dancing+Script|Open+Sans+Condensed:300|Raleway" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="../css/mainpage.css">
+</head>
+ 
+<body ng-app="MomentsByBilal" ng-controller="mainPageController" ng-cloak>
+  <md-sidenav md-component-id="left" class="md-sidenav-left">
+    <md-list>
+      <md-list-item>
+        <md-button class="nav-item" href="mainPage.html">
+          <h3>Home</h3>
+        </md-button>
+      </md-list-item>
+      <md-list-item>
+        <md-button class="nav-item" href="#">
+          <h3>Commercial</h3>
+        </md-button>
+      </md-list-item>
+      <md-list-item>
+        <md-button class="nav-item" href="graduationPage.html">
+          <h3>Graduation</h3>
+        </md-button>
+      </md-list-item>
+      <md-list-item>
+        <md-button class="nav-item" href="#">
+          <h3>Headshots</h3>
+        </md-button>
+      </md-list-item>
+      <md-list-item>
+        <md-button class="nav-item" href="#">
+          <h3>About</h3>
+        </md-button>
+      </md-list-item>
+      <md-list-item>
+        <md-button class="nav-item" href="#">
+          <h3>Contact</h3>
+        </md-button>
+      </md-list-item>
+      <md-list-item>
+        <md-button class="nav-item" href="#">
+          <h3>blog</h3>
+        </md-button>
+      </md-list-item>
+    </md-list>
+  </md-sidenav>
+  <md-toolbar class="siteToolbar" layout="row">
+    
+      <md-button  ng-click="openLeftMenu()" hide-gt-sm>
+        <md-icon class="menuButton" ng-bind="'menu'"></md-icon>
+      </md-button>
+      <h3 class="toolbarLogo" align="center">
+        <span id="logoSpan">VBB STUDIOS</span> | 
+        <span id="logoTextSpan">Fine art Photography</span>
+      </h3>
+      <span flex></span>
+    <div id="navigationRow" layout="row" hide-xs hide-sm>
+      <md-button class="toolbarButton" href="mainpage.html">
+        <h4><span >H</span><span class="buttonText">ome</span></h4>
+      </md-button>
+      <md-button class="toolbarButton" href="#">
+        <h4><span >C</span><span class="buttonText">ommercial</span></h4>
+      </md-button>
+      <md-button class="toolbarButton" href="graduationPage.html">
+        <h4><span >G</span><span class="buttonText">raduation</span></h4>
+      </md-button>
+      <md-button class="toolbarButton" href="#">
+        <h4><span >H</span><span class="buttonText">eadshots</span></h4>
+      </md-button>
+      <md-button class="toolbarButton" href="#">
+        <h4><span >A</span><span class="buttonText">bout</span></h4>
+      </md-button>
+      <md-button class="toolbarButton" href="#">
+        <h4><span >C</span><span class="buttonText">ontact</span></h4>
+      </md-button>
+      <md-button class="toolbarButton" href="#">
+        <h4><span class="buttonText">blog</span></h4>
+      </md-button>
+    </div>
+    
+  </md-toolbar>
+
+  <md-content layout="column">
+    <div class="mainContent" layout="row">
+      <div id="commercialEntry" layout="column">
+        <h3 class="entryLogo" align="center">COMMERCIAL</h3>
+        <img class="entryPhotos" src="https://static.wixstatic.com/media/221088_bebf53b099b44617b230967026852d91~mv2_d_5654_3769_s_4_2.jpg/v1/fill/w_1470,h_1924,al_c,q_90,usm_0.66_1.00_0.01/221088_bebf53b099b44617b230967026852d91~mv2_d_5654_3769_s_4_2.webp" width="100%"  alt="">
+        <md-button id="commercialButton" class="entryButton">Enter</md-button>
+      </div>
+      <div id="graduationEntry" layout="column">
+        <h3 class="entryLogo" align="center">GRADUATION</h3>
+        <img class="entryPhotos" src="https://static.wixstatic.com/media/221088_1715b5f3d7f7467db294a4b734ad4e41~mv2_d_4304_2847_s_4_2.jpg/v1/fill/w_1428,h_1924,al_c,q_90,usm_0.66_1.00_0.01/221088_1715b5f3d7f7467db294a4b734ad4e41~mv2_d_4304_2847_s_4_2.webp" width="100%" alt="">
+        <md-button id="graduationButton" class="entryButton" href="graduationPage.html">Enter</md-button>
+      </div>
+      
+    </div>
+    <img id="" class="signaturePicture" alt="" src="https://static.wixstatic.com/media/221088_03d51952b6854c5788a148cab93517ee~mv2_d_13666_6249_s_4_2.jpg/v1/fill/w_546,h_248,al_c,q_80,usm_0.66_1.00_0.01/221088_03d51952b6854c5788a148cab93517ee~mv2_d_13666_6249_s_4_2.webp" style="width: 273px; height: 124px; object-fit: cover; align-self: center;" >
+    <h3 style="align-self: center; margin-top: -15px;">VBB STUDIOS</h3>
+    <h4 style="align-self: center; margin-top: -15px;">Bilal Akhtar Photography</h4>
+  </md-content>   
+  
+  <!-- Angular Material requires Angular.js Libraries -->
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-aria.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-messages.min.js"></script>
+
+  <!-- Angular Material Library -->
+  <script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.js"></script>
+  
+  <!-- Your application bootstrap  -->
+  <script type="text/javascript" src="../js/app.js">
+  </script>
+  
+</body>
+</html>
+
+<!--
+Copyright 2016 Google Inc. All Rights Reserved. 
+Use of this source code is governed by an MIT-style license that can be in foundin the LICENSE file at http://material.angularjs.org/license.
+-->

@@ -1,0 +1,149 @@
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
+
+.siteToolbar {
+	background-color: #ffffff !important;
+	position: fixed;
+	height: 75px;
+}
+
+.menuButton {
+	color: #000000 !important;
+}
+
+
+.toolbarButton, .toolbarLogo {
+	color: #000000;
+}
+
+.toolbarLogo {
+	margin-left: 5.5%;
+}
+
+#logoSpan {
+	font-family: 'Cinzel', serif;
+	font-size: 27px;
+	font-weight: lighter;
+}
+
+#logoTextSpan {
+	font-family: 'Cinzel', serif;
+	font-size: 20px;
+	font-weight: bolder;
+}
+
+#navigationRow {
+	margin-right: 5.5%;
+	font-family: 'Raleway', serif;
+}
+
+
+#graduationContent {
+	margin-top: 75px;
+	height: 100vh;
+}
+
+#graduationBannerPicture {
+	margin-left: 5%;
+}
+
+.graduationOverlay {
+	z-index: 10;
+	position: absolute;
+	align-self: center;
+	color: #ffffff;
+}
+
+#welcomeText {
+	margin-top: 100px !important;
+	font-size: 1.75em;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-weight: lighter;
+}
+
+#toText {
+	margin-top: 140px;
+	font-size: 1em;
+	font-family: 'Dancing Script', cursive;
+
+}
+
+#artOfGraduationText {
+	margin-top: 325px;
+	font-size: 4em;
+	font-family: 'Cinzel', serif;
+	font-weight: lighter;
+}
+
+#photographyText {
+	margin-top: 400px;
+	font-size: 2em;
+	font-family: 'Raleway', serif;
+	font-weight: lighter;
+	letter-spacing: 10px;
+}
+
+.entryButton {
+	z-index: 10;
+	position: absolute;
+	align-self: center;
+	color: #ffffff;
+	margin-top: 475px;
+	margin-left: -0.25%;
+	border: solid rgba(255, 255, 255, 1) 1px;
+	border-radius: 0px !important;
+	border-color: #ffffff;
+}
+
+.marketLocations {
+	align-self: center;
+}
+
+#studentLifestyleContainer {
+	align-self: center;
+	margin-top: 10px;
+}
+
+#studentText {
+	text-decoration: underline;
+	font-size: 3em;
+	margin-left: -2.5%;
+	font-weight: lighter;
+	font-family: 'Cinzel', serif;
+
+}
+
+#lifestyleText {
+	font-weight: bolder;
+	font-size: 3em;
+	margin-left: 2.5%;
+	font-family: 'Cinzel', serif;
+}
+
+#studentLifestyleParagraph {
+	text-align: center;
+	margin-top: 70px;
+}

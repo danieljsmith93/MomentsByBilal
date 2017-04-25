@@ -1,0 +1,107 @@
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
+
+.siteToolbar {
+	background-color: #ffffff !important;
+	position: fixed;
+}
+
+.menuButton {
+	color: #000000 !important;
+}
+
+
+.toolbarButton, .toolbarLogo {
+	color: #000000;
+}
+
+.toolbarLogo {
+	margin-left: 4.5%;
+}
+
+#logoSpan {
+	font-family: 'Cinzel', serif;
+	font-size: 27px;
+	font-weight: lighter;
+}
+
+#logoTextSpan {
+	font-family: 'Cinzel', serif;
+	font-size: 20px;
+	font-weight: bolder;
+}
+
+#navigationRow {
+	margin-right: 2.5%;
+	font-family: 'Raleway', serif;
+}
+
+.buttonText {
+	text-transform: lowercase;
+}
+
+.mainContent {
+	margin-top: 100px;
+}
+
+.entryLogo {
+	z-index: 10;
+	position: absolute;
+	margin-top: 50px;
+	color: #ffffff;
+	width: 45%;
+	font-size: 2.25em;
+	font-family: 'Cinzel', serif;
+	text-decoration: underline;
+}
+
+.entryButton {
+	z-index: 10;
+	position: absolute;
+	align-self: center;
+	color: #ffffff;
+	margin-top: 100px;
+	border: solid rgba(255, 255, 255, 1) 1px;
+	border-radius: 0px !important;
+	border-color: #ffffff;
+}
+
+#commercialButton {
+	margin-left: -1%;
+}
+
+#commercialEntry {
+	float: left;
+	margin-left: 4.5%;
+	z-index: 1;
+}
+
+#graduationEntry {
+	float: right;
+	margin-right: 4.5%;
+	margin-left: 1%;
+	z-index: 1;
+}
