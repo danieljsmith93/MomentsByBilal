@@ -27,37 +27,55 @@
 .siteToolbar {
 	background-color: #ffffff !important;
 	position: fixed;
-	height: 75px;
+	display: inline-block;
+	width: 100%;
+	z-index: 100;
 }
 
 .menuButton {
+	width: 10%;
+	min-width: 0;
+	padding-left: 2%;
+	padding-right: 2%;
+	display: inline-block;
+}
+
+.menuIcon {
 	color: #000000 !important;
 }
 
 
 .toolbarButton, .toolbarLogo {
 	color: #000000;
+	display: inline-block;
 }
 
 .toolbarLogo {
-	margin-left: 5.5%;
-}
-
-#logoSpan {
-	font-family: 'Cinzel', serif;
-	font-size: 27px;
-	font-weight: lighter;
+	width: 80%;
+	align-self: center;
+	margin-left: 0;
 }
 
 #logoTextSpan {
 	font-family: 'Cinzel', serif;
-	font-size: 20px;
+	font-size: 3.5vw;
 	font-weight: bolder;
 }
 
+#logoSpan {
+	font-family: 'Cinzel', serif;
+	font-size: 4vw;
+	font-weight: lighter;
+}
+
+.buttonText {
+	text-transform: lowercase;
+}
+
 #navigationRow {
-	margin-right: 5.5%;
+	margin-right: 2.5%;
 	font-family: 'Raleway', serif;
+	float: right;
 }
 
 
@@ -78,29 +96,29 @@
 }
 
 #welcomeText {
-	margin-top: 100px !important;
-	font-size: 1.75em;
+	margin-top: 20px !important;
+	font-size: 5.5vw;
 	font-family: 'Open Sans Condensed', sans-serif;
 	font-weight: lighter;
 }
 
 #toText {
-	margin-top: 140px;
-	font-size: 1em;
+	margin-top: 50px;
+	font-size: 4vw;
 	font-family: 'Dancing Script', cursive;
 
 }
 
 #artOfGraduationText {
-	margin-top: 325px;
-	font-size: 4em;
+	margin-top: 90px;
+	font-size: 6vw;
 	font-family: 'Cinzel', serif;
 	font-weight: lighter;
 }
 
 #photographyText {
-	margin-top: 400px;
-	font-size: 2em;
+	margin-top: 130px;
+	font-size: 4.5vw;
 	font-family: 'Raleway', serif;
 	font-weight: lighter;
 	letter-spacing: 10px;
@@ -111,7 +129,7 @@
 	position: absolute;
 	align-self: center;
 	color: #ffffff;
-	margin-top: 475px;
+	margin-top: 170px;
 	margin-left: -0.25%;
 	border: solid rgba(255, 255, 255, 1) 1px;
 	border-radius: 0px !important;
@@ -120,30 +138,310 @@
 
 .marketLocations {
 	align-self: center;
+	font-size: 3vw;
 }
 
 #studentLifestyleContainer {
 	align-self: center;
 	margin-top: 10px;
+	display: inline;
 }
 
 #studentText {
 	text-decoration: underline;
-	font-size: 3em;
-	margin-left: -2.5%;
+	font-size: 6.5vw;
 	font-weight: lighter;
 	font-family: 'Cinzel', serif;
-
 }
 
 #lifestyleText {
 	font-weight: bolder;
-	font-size: 3em;
-	margin-left: 2.5%;
+	font-size: 6.5vw;
 	font-family: 'Cinzel', serif;
+
 }
 
 #studentLifestyleParagraph {
 	text-align: center;
-	margin-top: 70px;
+	font-size: 3.75vw;
+	padding: 2.5%;
+
+}
+
+#studentSignature {
+	display: inline-block;
+}
+
+#studentSignatureText {
+	margin-left: 5%;
+	font-size: 5vw;
+	text-decoration: underline;
+	display: inline-block;
+}
+
+.blackBar {
+	background-color: #000000;
+	height: 20px;
+	width: 40vw;
+	margin-top: 20px;
+	float: right;
+	display: inline-block;
+}
+
+@media screen and (min-width: 768px) {
+	.toolbarLogo {
+		margin-left: 6.5%;
+		width: auto;
+	}
+
+	#logoTextSpan {
+		font-family: 'Cinzel', serif;
+		font-size: 20px;
+		font-weight: bolder;
+	}
+
+	#logoSpan {
+		font-family: 'Cinzel', serif;
+		font-size: 27px;
+		font-weight: lighter;
+	}
+
+	#navigationRow {
+		margin-right: 4.5%;
+		font-family: 'Raleway', serif;
+	}
+
+	.mainContent {
+		margin-top: 100px;
+	}
+
+	.entryLogo {
+		z-index: 10;
+		position: absolute;
+		margin-top: 50px;
+		color: #ffffff;
+		width: 45%;
+		font-size: 2.25em;
+		font-family: 'Cinzel', serif;
+		text-decoration: underline;
+	}
+
+	#welcomeText {
+		margin-top: 50px !important;
+		font-size: 5.5vw;
+		font-family: 'Open Sans Condensed', sans-serif;
+		font-weight: lighter;
+	}
+
+	#toText {
+		margin-top: 150px;
+		font-size: 4vw;
+		font-family: 'Dancing Script', cursive;
+
+	}
+
+	#artOfGraduationText {
+		margin-top: 350px;
+		font-size: 6vw;
+		font-family: 'Cinzel', serif;
+		font-weight: lighter;
+	}
+
+	#photographyText {
+		margin-top: 450px;
+		font-size: 4.5vw;
+		font-family: 'Raleway', serif;
+		font-weight: lighter;
+		letter-spacing: 10px;
+	}
+
+	.entryButton {
+		z-index: 10;
+		position: absolute;
+		align-self: center;
+		color: #ffffff;
+		margin-top: 600px;
+		margin-left: -0.25%;
+		border: solid rgba(255, 255, 255, 1) 1px;
+		border-radius: 0px !important;
+		border-color: #ffffff;
+	}
+
+	.marketLocations {
+		align-self: center;
+		font-size: 1.75vw;
+	}
+
+	#studentLifestyleContainer {
+		align-self: center;
+		margin-top: 30px;
+		display: inline;
+	}
+
+	#studentText {
+		text-decoration: underline;
+		font-size: 4vw;
+		font-weight: lighter;
+		font-family: 'Cinzel', serif;
+	}
+
+	#lifestyleText {
+		font-weight: bolder;
+		font-size: 4vw;
+		font-family: 'Cinzel', serif;
+
+	}
+
+	#studentLifestyleParagraph {
+		text-align: center;
+		font-size: 1.5vw;
+		margin-top: -25px;
+		padding: 2.5%;
+
+	}
+
+	#studentSignature {
+		display: inline-block;
+	}
+
+	#studentSignatureText {
+		margin-left: 5%;
+		font-size: 2.5vw;
+		text-decoration: underline;
+		display: inline-block;
+	}
+
+	.blackBar {
+		background-color: #000000;
+		height: 20px;
+		width: 60vw;
+		margin-right: 5vw;
+		margin-top: 40px;
+		float: right;
+		display: inline-block;
+	}
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1360px) {
+	.siteToolbar {
+	}
+	.toolbarLogo {
+		display: block;
+		margin: 20px auto;
+		width: auto;
+		float: none;
+		align-self: center;
+
+	}
+	.toolbarButton {
+		margin: 0 auto;
+	}
+
+	#navigationRow {
+		width: auto;
+		float: none;
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+		align-self: center;
+		display: block;
+	}
+
+	.menuButton {
+		display: none;
+	}
+
+	#welcomeText {
+		margin-top: 100px !important;
+		font-size: 5.5vw;
+		font-family: 'Open Sans Condensed', sans-serif;
+		font-weight: lighter;
+	}
+
+	#toText {
+		margin-top: 150px;
+		font-size: 3.5vw;
+		font-family: 'Dancing Script', cursive;
+
+	}
+
+	#artOfGraduationText {
+		margin-top: 225px;
+		font-size: 6vw;
+		font-family: 'Cinzel', serif;
+		font-weight: lighter;
+	}
+
+	#photographyText {
+		margin-top: 275px;
+		font-size: 4.5vw;
+		font-family: 'Raleway', serif;
+		font-weight: lighter;
+		letter-spacing: 10px;
+	}
+
+	.entryButton {
+		z-index: 10;
+		position: absolute;
+		align-self: center;
+		color: #ffffff;
+		margin-top: 375px;
+		margin-left: -0.25%;
+		border: solid rgba(255, 255, 255, 1) 1px;
+		border-radius: 0px !important;
+		border-color: #ffffff;
+	}
+
+	.marketLocations {
+		align-self: center;
+		font-size: 2.5vw;
+	}
+
+	#studentLifestyleContainer {
+		align-self: center;
+		margin-top: 10px;
+		display: inline;
+	}
+
+	#studentText {
+		text-decoration: underline;
+		font-size: 5vw;
+		font-weight: lighter;
+		font-family: 'Cinzel', serif;
+	}
+
+	#lifestyleText {
+		font-weight: bolder;
+		font-size: 5vw;
+		font-family: 'Cinzel', serif;
+
+	}
+
+	#studentLifestyleParagraph {
+		text-align: center;
+		font-size: 2.25vw;
+		padding: 2.5%;
+	}
+
+	#studentSignature {
+		display: inline-block;
+	}
+
+	#studentSignatureText {
+		margin-left: 5%;
+		font-size: 3.75vw;
+		text-decoration: underline;
+		display: inline-block;
+	}
+
+	.blackBar {
+	background-color: #000000;
+	height: 30px;
+	width: 50vw;
+	margin-top: 30px;
+	margin-right: 5vw;
+	float: right;
+	display: inline-block;
+}
 }

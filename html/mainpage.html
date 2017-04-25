@@ -12,7 +12,7 @@
 </head>
  
 <body ng-app="MomentsByBilal" ng-controller="mainPageController" ng-cloak>
-  <md-sidenav md-component-id="left" class="md-sidenav-left">
+  <md-sidenav md-component-id="left" class="md-sidenav-left sideMenu">
     <md-list>
       <md-list-item>
         <md-button class="nav-item" href="mainPage.html">
@@ -53,8 +53,8 @@
   </md-sidenav>
   <md-toolbar class="siteToolbar" layout="row">
     
-      <md-button  ng-click="openLeftMenu()" hide-gt-sm>
-        <md-icon class="menuButton" ng-bind="'menu'"></md-icon>
+      <md-button class="menuButton" ng-click="openLeftMenu()" hide-gt-sm>
+        <md-icon class="menuIcon" ng-bind="'menu'"></md-icon>
       </md-button>
       <h3 class="toolbarLogo" align="center">
         <span id="logoSpan">VBB STUDIOS</span> | 

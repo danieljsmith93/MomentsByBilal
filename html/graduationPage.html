@@ -51,10 +51,10 @@
       </md-list-item>
     </md-list>
   </md-sidenav>
-  <md-toolbar class="siteToolbar" layout="row">
+  <md-toolbar class="siteToolbar" layout="row" layout-xs="column">
     
-      <md-button  ng-click="openLeftMenu()" hide-gt-sm>
-        <md-icon class="menuButton" ng-bind="'menu'"></md-icon>
+      <md-button class="menuButton" ng-click="openLeftMenu()" hide-gt-sm>
+        <md-icon class="menuIcon" ng-bind="'menu'"></md-icon>
       </md-button>
       <h3 class="toolbarLogo" align="center">
         <span id="logoSpan">VBB STUDIOS</span> | 
@@ -108,8 +108,16 @@
         lifestyle.
       </p>
       <div id="studentSignature" flex layout="row">
-        <h1 flex="25" style="margin-left: 5%; text-decoration: underline;">Student Signature</h1>
-        <div flex="65" style="background-color: #000000; height: 20px; margin-top: 35px;"></div>
+        <h1 id="studentSignatureText" flex>Student Signature</h1>
+        <div class="blackBar" flex ></div>
+      </div>
+      <div layout="row">
+        <div layout="column">
+          <h6>college is an adventurously grand experience</h6>
+        </div>
+        <div layout="column">
+          
+        </div>
       </div>
     </div>
 
