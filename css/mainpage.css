@@ -23,6 +23,16 @@
   font-feature-settings: 'liga';
 }
 
+/* Layout classes */
+
+.col-3 {
+	width: 98%;
+	padding: 1%;
+}
+
+body {
+	background-color: #000000;
+}
 
 .siteToolbar {
 	background-color: #ffffff !important;
@@ -83,50 +93,33 @@
 	float: right;
 }
 
-.mainContent {
+#mainContainer {
+	background-color: #000000;
+}
+
+.imageSlider1 {
 	margin-top: 100px;
 }
 
-.entryLogo {
-	z-index: 10;
-	position: absolute;
-	margin-top: 50px;
-	color: #ffffff;
-	width: 45%;
-	font-size: 1.25em;
-	font-family: 'Cinzel', serif;
-	text-decoration: underline;
+.imageSlider2, .imageSlider3 {
+	margin-top: 10px;
 }
 
-.entryButton {
-	z-index: 10;
-	position: absolute;
-	align-self: center;
-	color: #ffffff;
-	margin-top: 100px;
-	border: solid rgba(255, 255, 255, 1) 1px;
-	border-radius: 0px !important;
-	border-color: #ffffff;
+.carousel-image {
+	opacity: 0.75;
 }
 
-#commercialButton {
-	margin-left: -1%;
+.carousel-image:hover {
+	opacity: 1;
 }
 
-#commercialEntry {
-	float: left;
-	margin-left: 4.5%;
-	z-index: 1;
-}
-
-#graduationEntry {
-	float: right;
-	margin-right: 4.5%;
-	margin-left: 1%;
-	z-index: 1;
-}
-
+/*Mobile Styling*/
 @media screen and (min-width: 768px) {
+	.col-3 { 
+		width: 24.5%;
+		padding: 0.25%;
+	}
+
 	.toolbarLogo {
 		margin-left: 6.5%;
 		width: auto;
@@ -149,20 +142,7 @@
 		font-family: 'Raleway', serif;
 	}
 
-	.mainContent {
-		margin-top: 100px;
-	}
 
-	.entryLogo {
-		z-index: 10;
-		position: absolute;
-		margin-top: 50px;
-		color: #ffffff;
-		width: 45%;
-		font-size: 2.25em;
-		font-family: 'Cinzel', serif;
-		text-decoration: underline;
-	}
 
 	#welcomeText {
 		margin-top: 50px !important;
@@ -193,74 +173,11 @@
 		letter-spacing: 10px;
 	}
 
-	.entryButton {
-		z-index: 10;
-		position: absolute;
-		align-self: center;
-		color: #ffffff;
-		margin-top: 600px;
-		margin-left: -0.25%;
-		border: solid rgba(255, 255, 255, 1) 1px;
-		border-radius: 0px !important;
-		border-color: #ffffff;
-	}
-
-	.marketLocations {
-		align-self: center;
-		font-size: 1.75vw;
-	}
-
-	#studentLifestyleContainer {
-		align-self: center;
-		margin-top: 30px;
-		display: inline;
-	}
-
-	#studentText {
-		text-decoration: underline;
-		font-size: 4vw;
-		font-weight: lighter;
-		font-family: 'Cinzel', serif;
-	}
-
-	#lifestyleText {
-		font-weight: bolder;
-		font-size: 4vw;
-		font-family: 'Cinzel', serif;
-
-	}
-
-	#studentLifestyleParagraph {
-		text-align: center;
-		font-size: 1.5vw;
-		margin-top: -25px;
-		padding: 2.5%;
-
-	}
-
-	#studentSignature {
-		display: inline-block;
-	}
-
-	#studentSignatureText {
-		margin-left: 5%;
-		font-size: 2.5vw;
-		text-decoration: underline;
-		display: inline-block;
-	}
-
-	.blackBar {
-		background-color: #000000;
-		height: 20px;
-		width: 60vw;
-		margin-right: 5vw;
-		margin-top: 40px;
-		float: right;
-		display: inline-block;
-	}
+	
 
 }
 
+/*Tablet Styling*/
 @media screen and (min-width: 768px) and (max-width: 1360px) {
 	.siteToolbar {
 	}
@@ -284,6 +201,14 @@
 		margin-right: auto;
 		align-self: center;
 		display: block;
+	}
+
+	.imageSlider1 {
+		margin-top: 160px;
+	}
+
+	.imageSlider2, .imageSlider3 {
+		margin-top: 10px;
 	}
 
 	.menuButton {
@@ -319,67 +244,7 @@
 		letter-spacing: 10px;
 	}
 
-	.entryButton {
-		z-index: 10;
-		position: absolute;
-		align-self: center;
-		color: #ffffff;
-		margin-top: 375px;
-		margin-left: -0.25%;
-		border: solid rgba(255, 255, 255, 1) 1px;
-		border-radius: 0px !important;
-		border-color: #ffffff;
-	}
 
-	.marketLocations {
-		align-self: center;
-		font-size: 2.5vw;
-	}
-
-	#studentLifestyleContainer {
-		align-self: center;
-		margin-top: 10px;
-		display: inline;
-	}
-
-	#studentText {
-		text-decoration: underline;
-		font-size: 5vw;
-		font-weight: lighter;
-		font-family: 'Cinzel', serif;
-	}
-
-	#lifestyleText {
-		font-weight: bolder;
-		font-size: 5vw;
-		font-family: 'Cinzel', serif;
-
-	}
-
-	#studentLifestyleParagraph {
-		text-align: center;
-		font-size: 2.25vw;
-		padding: 2.5%;
-	}
-
-	#studentSignature {
-		display: inline-block;
-	}
-
-	#studentSignatureText {
-		margin-left: 5%;
-		font-size: 3.75vw;
-		text-decoration: underline;
-		display: inline-block;
-	}
-
-	.blackBar {
-	background-color: #000000;
-	height: 30px;
-	width: 50vw;
-	margin-top: 30px;
-	margin-right: 5vw;
-	float: right;
-	display: inline-block;
-}
+	
+	
 }

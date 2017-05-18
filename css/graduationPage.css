@@ -179,13 +179,67 @@
 	display: inline-block;
 }
 
-.blackBar {
+.studentBlackBar {
 	background-color: #000000;
 	height: 20px;
-	width: 40vw;
-	margin-top: 20px;
+	width: 60vw;
+	margin-top: 40px;
 	float: right;
 	display: inline-block;
+	margin-right: 5%;
+}
+
+#studentSignatureContainer {
+	margin-top: 100px;
+	margin-left: 10%;
+}
+
+#studentSignatureParagraphTitle {
+	text-align: center;
+}
+
+#studentSignatureParagraphText {
+	text-align: center;
+
+}
+
+#lifestyleSignature {
+	display: inline-block;
+	margin-top: 400px;
+}
+
+#lifestyleSignatureText {
+	margin-right: 5%;
+	font-size: 2.75vw;
+	margin-top: 0;
+	text-decoration: underline;
+	display: inline-block;
+	float: right;
+}
+
+.lifestyleBlackBar {
+	background-color: #000000;
+	height: 20px;
+	width: 60vw;
+	margin-top: 20px;
+	float: left;
+	display: inline-block;
+	margin-left: 5%;
+}
+
+#lifestyleSignatureContainer {
+	margin-top: 100px;
+	margin-left: 60%;
+	float: right;
+}
+
+#lifestyleSignatureParagraphTitle {
+	text-align: center;
+}
+
+#lifestyleSignatureParagraphText {
+	text-align: center;
+
 }
 
 @media screen and (min-width: 768px) {
